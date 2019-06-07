@@ -1,0 +1,9 @@
+.module-container{
+  width: 100%;
+  position: relative;
+
+  .module{
+    min-height: 95vh;
+    height: auto;
+  }
+}

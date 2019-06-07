@@ -1,5 +1,116 @@
+.background-blue {
+  background: #94d5da;
+}
+
+.color-blue {
+  background: #94d5da;
+}
+
+.background-light-gray {
+  background: #506a6a;
+}
+
+.color-light-gray {
+  background: #506a6a;
+}
+
+.background-dark-gray {
+  background: #2e494d;
+}
+
+.color-dark-gray {
+  background: #2e494d;
+}
+
+.background-red {
+  background: #ed1c24;
+}
+
+.color-red {
+  background: #ed1c24;
+}
+
+.background-dark-green {
+  background: #3d803f;
+}
+
+.color-dark-green {
+  background: #3d803f;
+}
+
+.background-green {
+  background: #6aa644;
+}
+
+.color-green {
+  background: #6aa644;
+}
+
+.background-light-green {
+  background: #a4ce4c;
+}
+
+.color-light-green {
+  background: #a4ce4c;
+}
+
+.module-container {
+  width: 100%;
+  position: relative;
+}
+.module-container .module {
+  min-height: 95vh;
+  height: auto;
+}
+
+.top-bar {
+  height: 40vh;
+  width: 100%;
+}
+
+.navbar {
+  height: 5vw;
+  width: 100%;
+  background-color: #3d803f;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .item {
+  display: block;
+  width: 12%;
+  height: 100%;
+  border-bottom: #a4ce4c 0.2vw solid;
+  text-align: center;
+  padding-top: 1.3vw;
+  color: #ffffff;
+  font-size: 2vw;
+  text-decoration: none;
+}
+.navbar .item:hover {
+  border-bottom: #ffffff 0.4vw solid;
+  background-color: #a4ce4c;
+  color: #000000;
+}
+.navbar .item:focus {
+  border-bottom: #ed1c24 0.4vw solid;
+  background-color: #ffffff;
+  color: #000000;
+}
+.navbar .middle-item {
+  width: 12%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=eyoc.css.map */

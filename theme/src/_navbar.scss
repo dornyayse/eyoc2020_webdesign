@@ -1,0 +1,37 @@
+.navbar{
+  height: 5vw;
+  width: 100%;
+  background-color: map_get($theme-colors, "dark-green");
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .item{
+    display: block;
+    width: 12%;
+    height: 100%;
+    border-bottom: map_get($theme-colors, "light-green") 0.2vw solid;
+    text-align: center;
+    padding-top: 1.3vw;
+    color: map_get($web-colors, "white");
+
+    font-size: 2vw;
+    text-decoration: none;
+    &:hover{
+      border-bottom: map_get($web-colors, "white") 0.4vw solid;
+      background-color: map_get($theme-colors, "light-green");
+      color: map_get($web-colors, "black");
+    }
+    &:focus{
+      border-bottom: map_get($theme-colors, "red") 0.4vw solid;
+      background-color: map_get($web-colors, "white");
+      color: map_get($web-colors, "black");
+    }
+  }
+
+  .middle-item{
+    width: 12%;
+    height: 100%;
+  }
+}
