@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("font/pt-sans/PTC55F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Caption Bold";
+  src: url("font/pt-sans/PTC75F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("font/pt-sans/PTN57F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Narrow Bold";
+  src: url("font/pt-sans/PTN77F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Sans";
+  src: url("font/pt-sans/PTS55F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Sans Italic";
+  src: url("font/pt-sans/PTS56F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Sans Bold";
+  src: url("font/pt-sans/PTS55F.ttf");
+}
+@font-face {
+  font-family: "PT Sans Sans Bold Italic";
+  src: url("font/pt-sans/PTS56F.ttf");
+}
 .background-blue {
   background: #94d5da;
 }
@@ -69,44 +101,130 @@
 }
 
 .navbar {
-  height: 5vw;
+  height: 3vw;
   width: 100%;
-  background-color: #3d803f;
   display: flex;
   justify-content: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-  .navbar {
-    background-color: #6aa644;
-  }
+.navbar .item-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
 }
-.navbar .item {
+.navbar .item-container .item {
   display: block;
-  width: 12%;
+  width: auto;
+  flex-grow: 1;
   height: 100%;
-  border-bottom: #a4ce4c 0.2vw solid;
   text-align: center;
-  padding-top: 1.3vw;
   color: #ffffff;
-  font-size: 2vw;
+  font-family: "Rubik";
+  font-size: 1.5vw;
   text-decoration: none;
+  z-index: 1002;
 }
-.navbar .item:hover {
-  border-bottom: #ffffff 0.4vw solid;
-  background-color: #a4ce4c;
-  color: #000000;
+.navbar .item-container .item .back {
+  width: 101%;
+  height: 100%;
+  background-color: green;
+  z-index: 1001;
+  position: relative;
+  border-bottom: #2e494d solid 0.3vw;
 }
-.navbar .item:focus {
-  border-bottom: #ed1c24 0.4vw solid;
-  background-color: #ffffff;
-  color: #000000;
+.navbar .item-container .item .text {
+  display: block;
+  z-index: 1002;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  padding-top: 0.5vw;
+}
+.navbar .item-container .item .front {
+  display: block;
+  z-index: 1003;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -200%;
+  transform: skewX(40deg);
+}
+.navbar .item-container .item:nth-child(3n+1) .back {
+  background-color: #52ab54;
+}
+.navbar .item-container .item:nth-child(3n+2) .back {
+  background-color: #47964a;
+}
+.navbar .item-container .item:nth-child(3n) .back {
+  background-color: #3d803f;
+}
+.navbar .item-container.left {
+  flex-direction: row;
+}
+.navbar .item-container.left .item .back {
+  transform: skewX(40deg);
+  border-left: #506a6a solid 0.2vw;
+}
+.navbar .item-container.left .item .front {
+  transform: skewX(40deg);
+}
+.navbar .item-container.right {
+  flex-direction: row-reverse;
+}
+.navbar .item-container.right .item .back {
+  transform: skewX(-40deg);
+  border-right: #506a6a solid 0.2vw;
+}
+.navbar .item-container.right .item .front {
+  transform: skewX(-40deg);
 }
 .navbar .middle-item {
   width: 12%;
   height: 100%;
+  text-align: center;
+  display: block;
+  position: relative;
+  color: #ffffff;
+  font-family: "Rubik";
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+.navbar .middle-item .back {
+  display: block;
+  background-color: #ed1c24;
+  position: relative;
+  width: 96%;
+  height: 150%;
+  margin-top: -1.6%;
+  margin-left: 1%;
+  transform: perspective(6.8vw) rotateX(-45deg);
+  border-bottom: #2e494d solid 0.5vw;
+  border-left: #2e494d solid 0.5vw;
+  border-right: #2e494d solid 0.5vw;
+  z-index: 1004;
+}
+.navbar .middle-item .text {
+  display: block;
+  z-index: 1005;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -140%;
+  padding-top: 0.5vw;
+}
+.navbar .middle-item .front {
+  display: block;
+  position: relative;
+  top: -243%;
+  width: 96%;
+  height: 150%;
+  margin-top: -1.6%;
+  margin-left: 1%;
+  transform: perspective(6.8vw) rotateX(-45deg);
+  z-index: 1007;
 }
 
 * {
