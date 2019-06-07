@@ -7,6 +7,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+
   .item{
     display: block;
     width: 12%;
@@ -18,11 +19,13 @@
 
     font-size: 2vw;
     text-decoration: none;
+
     &:hover{
       border-bottom: map_get($web-colors, "white") 0.4vw solid;
       background-color: map_get($theme-colors, "light-green");
       color: map_get($web-colors, "black");
     }
+
     &:focus{
       border-bottom: map_get($theme-colors, "red") 0.4vw solid;
       background-color: map_get($web-colors, "white");
