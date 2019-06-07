@@ -1,31 +1,93 @@
-$screen-sm-min: 576px;
+$screen-min: (
+        "sm": 576px,
+        "md": 768px,
+        "lg": 992px,
+        "xl": 1200px
+);
 
-$screen-md-min: 768px;
+$screen-max: (
+        "xs": 575px,
+        "sm": 767px,
+        "md": 991px,
+        "lg": 1199px
+);
 
-$screen-lg-min: 992px;
-
-$screen-xl-min: 1200px;
-
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
+@mixin device-xs {
+  @media (max-width: #{map_get($screen-max, "xs")}) {
+    @content;
+  }
+}
+@mixin device-xs-land {
+  @media (max-width: #{map_get($screen-max, "xs")}) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin device-xs-port {
+  @media (max-width: #{map_get($screen-max, "xs")}) and (orientation: portrait){
     @content;
   }
 }
 
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
+@mixin device-sm {
+  @media (min-width: #{map_get($screen-min, "sm")}) and (max-width: #{map_get($screen-max, "sm")}) {
+    @content;
+  }
+}
+@mixin device-sm-land {
+  @media (min-width: #{map_get($screen-min, "sm")}) and (max-width: #{map_get($screen-max, "sm")}) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin device-sm-port {
+  @media (min-width: #{map_get($screen-min, "sm")}) and (max-width: #{map_get($screen-max, "sm")}) and (orientation: portrait){
     @content;
   }
 }
 
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
+@mixin device-md {
+  @media (min-width: #{map_get($screen-min, "md")}) and (max-width: #{map_get($screen-max, "md")}) {
+    @content;
+  }
+}
+@mixin device-md-land {
+  @media (min-width: #{map_get($screen-min, "md")}) and (max-width: #{map_get($screen-max, "md")}) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin device-md-port {
+  @media (min-width: #{map_get($screen-min, "md")}) and (max-width: #{map_get($screen-max, "md")}) and (orientation: portrait){
     @content;
   }
 }
 
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
+@mixin device-lg {
+  @media (min-width: #{map_get($screen-min, "lg")}) and (max-width: #{map_get($screen-max, "lg")}) {
+    @content;
+  }
+}
+@mixin device-lg-land {
+  @media (min-width: #{map_get($screen-min, "lg")}) and (max-width: #{map_get($screen-max, "lg")}) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin device-lg-port {
+  @media (min-width: #{map_get($screen-min, "lg")}) and (max-width: #{map_get($screen-max, "lg")}) and (orientation: portrait){
+    @content;
+  }
+}
+
+@mixin device-xl {
+  @media (min-width: #{map_get($screen-min, "xl")}) {
+    @content;
+  }
+}
+@mixin device-xl-land {
+  @media (min-width: #{map_get($screen-min, "xl")}) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin device-xl-port {
+  @media (min-width: #{map_get($screen-min, "xl")}) and (orientation: portrait){
     @content;
   }
 }

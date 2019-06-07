@@ -2,6 +2,11 @@
   height: 5vw;
   width: 100%;
   background-color: map_get($theme-colors, "dark-green");
+
+  @include device-sm-land{
+    background-color: map_get($theme-colors, "green");
+  }
+
   display: flex;
   justify-content: center;
   position: sticky;
