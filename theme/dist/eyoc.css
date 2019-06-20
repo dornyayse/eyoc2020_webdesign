@@ -270,6 +270,9 @@
   padding-bottom: 3vw;
   display: flex;
 }
+.module-container .module .area .information .content .text .field a {
+  display: inline;
+}
 .module-container .module .area .information .content .text .field .key {
   width: 40%;
   text-align: right;
