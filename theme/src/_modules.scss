@@ -1,9 +1,27 @@
+@import "modules/welcoming";
+@import "modules/tabbed";
+
 .module-container{
   width: 100%;
   position: relative;
 
   .module{
-    min-height: 95vh;
+    min-height: 100vh;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    padding-top: 3.5vw;
+    padding-bottom: 1vw;
+
+    .area{
+      width: 70%;
+      height: auto;
+      align-self: stretch;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
