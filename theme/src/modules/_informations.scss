@@ -1,7 +1,7 @@
 .module-container {
   .module {
     .area {
-      .information{
+      .information {
         width: 100%;
         position: relative;
         height: auto;
@@ -9,7 +9,137 @@
         padding-bottom: 2vw;
         display: flex;
 
+        .title {
+          .text-box {
+            font-family: "Rubik";
+            font-size: 1.5vw;
+            width: 100%;
+            height: 3vw;
+            color: white;
 
+            .back {
+              width: 100%;
+              height: 100%;
+              z-index: 900;
+
+              .back-helper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 900;
+                border-bottom: map_get($theme-colors, "light-gray") solid 0.3vw;
+                background-color: map_get($theme-colors, "dark-gray");
+                transform: skewX(40deg);
+                border-left: map_get($theme-colors, "blue") solid 0.2vw;
+              }
+            }
+
+            .text {
+              width: 100%;
+              height: 100%;
+              z-index: 901;
+              padding-top: 0.5vw;
+              position: relative;
+              top: -100%;
+            }
+          }
+
+          width: 35%;
+          height: fit-content;
+          max-height: 80vh;
+          top: 10vh;
+          position: sticky;
+          text-align: center;
+        }
+
+        .content {
+          width: 65%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+
+          .text {
+            width: 100%;
+            height: auto;
+            font-size: 1.5vw;
+            color: black;
+            text-align: justify;
+
+            .sub-title {
+              .text-box {
+                font-family: "Rubik";
+                font-size: 1.5vw;
+                width: 100%;
+                height: 3vw;
+                color: white;
+
+                .back {
+                  width: 100%;
+                  height: 100%;
+                  z-index: 900;
+
+                  .back-helper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 900;
+                    border-bottom: map_get($theme-colors, "dark-gray") solid 0.3vw;
+                    background-color: map_get($theme-colors, "blue");
+                    transform: skewX(40deg);
+                    border-right: map_get($theme-colors, "light-gray") solid 0.2vw;
+                  }
+                }
+
+                .text {
+                  width: 100%;
+                  height: 100%;
+                  z-index: 901;
+                  padding-top: 0.5vw;
+                  position: relative;
+                  top: -100%;
+                  text-align: center;
+                  color: black;
+                }
+              }
+
+              width: 100%;
+              text-align: center;
+            }
+
+            .field{
+              width: 90%;
+              margin-left: 5%;
+              margin-right: 5%;
+              text-align: left;
+              font-family: "Rubik";
+              font-size: 1.2vw;
+              color: black;
+              height: fit-content;
+              padding-bottom: 3vw;
+              display: flex;
+
+              .key{
+                width: 40%;
+                text-align: right;
+                height: auto;
+                margin-right: 10%;
+              }
+
+              .value{
+                height: auto;
+                width: 40%;
+                text-align: left;
+              }
+            }
+            .center{
+              text-align: center !important;
+              a{
+                display: block;
+                width: 100%;
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -171,6 +171,123 @@
   padding-bottom: 2vw;
   display: flex;
 }
+.module-container .module .area .information .title {
+  width: 35%;
+  height: fit-content;
+  max-height: 80vh;
+  top: 10vh;
+  position: sticky;
+  text-align: center;
+}
+.module-container .module .area .information .title .text-box {
+  font-family: "Rubik";
+  font-size: 1.5vw;
+  width: 100%;
+  height: 3vw;
+  color: white;
+}
+.module-container .module .area .information .title .text-box .back {
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+}
+.module-container .module .area .information .title .text-box .back .back-helper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  border-bottom: #506a6a solid 0.3vw;
+  background-color: #2e494d;
+  transform: skewX(40deg);
+  border-left: #94d5da solid 0.2vw;
+}
+.module-container .module .area .information .title .text-box .text {
+  width: 100%;
+  height: 100%;
+  z-index: 901;
+  padding-top: 0.5vw;
+  position: relative;
+  top: -100%;
+}
+.module-container .module .area .information .content {
+  width: 65%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.module-container .module .area .information .content .text {
+  width: 100%;
+  height: auto;
+  font-size: 1.5vw;
+  color: black;
+  text-align: justify;
+}
+.module-container .module .area .information .content .text .sub-title {
+  width: 100%;
+  text-align: center;
+}
+.module-container .module .area .information .content .text .sub-title .text-box {
+  font-family: "Rubik";
+  font-size: 1.5vw;
+  width: 100%;
+  height: 3vw;
+  color: white;
+}
+.module-container .module .area .information .content .text .sub-title .text-box .back {
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+}
+.module-container .module .area .information .content .text .sub-title .text-box .back .back-helper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  border-bottom: #2e494d solid 0.3vw;
+  background-color: #94d5da;
+  transform: skewX(40deg);
+  border-right: #506a6a solid 0.2vw;
+}
+.module-container .module .area .information .content .text .sub-title .text-box .text {
+  width: 100%;
+  height: 100%;
+  z-index: 901;
+  padding-top: 0.5vw;
+  position: relative;
+  top: -100%;
+  text-align: center;
+  color: black;
+}
+.module-container .module .area .information .content .text .field {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+  font-family: "Rubik";
+  font-size: 1.2vw;
+  color: black;
+  height: fit-content;
+  padding-bottom: 3vw;
+  display: flex;
+}
+.module-container .module .area .information .content .text .field .key {
+  width: 40%;
+  text-align: right;
+  height: auto;
+  margin-right: 10%;
+}
+.module-container .module .area .information .content .text .field .value {
+  height: auto;
+  width: 40%;
+  text-align: left;
+}
+.module-container .module .area .information .content .text .center {
+  text-align: center !important;
+}
+.module-container .module .area .information .content .text .center a {
+  display: block;
+  width: 100%;
+}
 
 .module-container {
   width: 100%;
