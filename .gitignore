@@ -2,3 +2,5 @@
 *.pdf
 
 theme/test-img/
+
+\.idea/workspace\.xml

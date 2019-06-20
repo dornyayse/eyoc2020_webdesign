@@ -160,6 +160,16 @@
   font-family: "Indie Flower";
   font-size: 1.5vw;
   color: black;
+  text-align: justify;
+}
+
+.module-container .module .area .information {
+  width: 100%;
+  position: relative;
+  height: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  display: flex;
 }
 
 .module-container {
