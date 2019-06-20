@@ -317,6 +317,20 @@
   width: 100%;
 }
 
+#eyoc-top-circle {
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  margin-top: -13.5vh;
+}
+
+#eyoc-top-logo {
+  position: absolute;
+  height: 39vh;
+  margin-top: 1vh;
+  margin-left: 35vw;
+}
+
 .navbar {
   height: 3vw;
   width: 100%;
