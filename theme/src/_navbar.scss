@@ -9,6 +9,7 @@
   display: flex;
   padding: 0.3rem 5% 0.3rem 5%;
   justify-content: space-around;
+  z-index: 1000;
 
   .item{
     display: block;
@@ -22,7 +23,7 @@
     text-align: center;
     color:  map_get($web-colors, "black");
     text-decoration: none;
-    
+
     &:first-child{
       border-left: none;
     }

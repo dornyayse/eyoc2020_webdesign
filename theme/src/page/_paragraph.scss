@@ -3,8 +3,27 @@
     .content {
       .paragraph{
         width: 75%;
-        background-color: red;
-        height: 100px;
+        .sub-title{
+          width: 100%;
+          text-transform: uppercase;
+          font-family: "PT Sans Bold";
+          font-size: 1rem;
+          color: map_get($web-colors, "black");
+          margin-bottom: 1rem;
+        }
+        .text{
+          width: 100%;
+          font-family: "PT Sans";
+          font-size: 1rem;
+          color: map_get($web-colors, "black");
+          height: fit-content;
+          text-align: justify;
+        }
+        .separator{
+          height: 4rem;
+          margin-bottom: 1rem;
+          border-bottom: 0.2rem dashed map_get($theme-colors, "dark-gray");
+        }
       }
     }
   }

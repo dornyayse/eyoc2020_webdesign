@@ -103,6 +103,7 @@
   display: flex;
   padding: 0.3rem 5% 0.3rem 5%;
   justify-content: space-around;
+  z-index: 1000;
 }
 .navbar .item {
   display: block;
@@ -145,8 +146,27 @@
 
 .body .page .content .paragraph {
   width: 75%;
-  background-color: red;
-  height: 100px;
+}
+.body .page .content .paragraph .sub-title {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "PT Sans Bold";
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.body .page .content .paragraph .text {
+  width: 100%;
+  font-family: "PT Sans";
+  font-size: 1rem;
+  color: #000000;
+  height: fit-content;
+  text-align: justify;
+}
+.body .page .content .paragraph .separator {
+  height: 4rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.2rem dashed #2e494d;
 }
 
 .body .page {
