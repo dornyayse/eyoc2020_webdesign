@@ -15,20 +15,20 @@
   src: url("font/pt-sans/PTN77F.ttf");
 }
 @font-face {
-  font-family: "PT Sans Sans";
+  font-family: "PT Sans";
   src: url("font/pt-sans/PTS55F.ttf");
 }
 @font-face {
-  font-family: "PT Sans Sans Italic";
+  font-family: "PT Sans Italic";
   src: url("font/pt-sans/PTS56F.ttf");
 }
 @font-face {
-  font-family: "PT Sans Sans Bold";
-  src: url("font/pt-sans/PTS55F.ttf");
+  font-family: "PT Sans Bold";
+  src: url("font/pt-sans/PTS75F.ttf");
 }
 @font-face {
-  font-family: "PT Sans Sans Bold Italic";
-  src: url("font/pt-sans/PTS56F.ttf");
+  font-family: "PT Sans Bold Italic";
+  src: url("font/pt-sans/PTS76F.ttf");
 }
 .background-blue {
   background: #94d5da;
@@ -86,7 +86,7 @@
   background: #a4ce4c;
 }
 
-.top {
+.body .top {
   position: relative;
   width: 100%;
   height: auto;
@@ -124,7 +124,33 @@
   border-right: none;
 }
 
-.page {
+.body .page .content .title {
+  width: 100%;
+  border-top: 0.2rem solid #2e494d;
+  border-bottom: 0.2rem solid #2e494d;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  height: 3.5rem;
+}
+.body .page .content .title .title-text {
+  width: 28%;
+  background-color: #94d5da;
+  height: 2rem;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 0.2rem 1rem 0.1rem 1rem;
+  font-family: "PT Sans Bold";
+  text-transform: uppercase;
+}
+
+.body .page .content .paragraph {
+  width: 75%;
+  background-color: red;
+  height: 100px;
+}
+
+.body .page {
+  padding-top: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -132,9 +158,15 @@
   position: relative;
   height: fit-content;
 }
-.page .content {
+.body .page .content {
   position: relative;
   width: 72%;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  width: 1024px;
 }
 
 * {
@@ -144,6 +176,8 @@
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=eyoc.css.map */

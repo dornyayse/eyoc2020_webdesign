@@ -1,0 +1,25 @@
+.body {
+  .page {
+    .content {
+      .title{
+        width: 100%;
+        border-top: 0.2rem solid map_get($theme-colors, "dark-gray");
+        border-bottom: 0.2rem solid map_get($theme-colors, "dark-gray");
+        margin-top: 1.5rem;
+        padding-top: 0.5rem;
+        height: 3.5rem;
+
+        .title-text{
+          width: 28%;
+          background-color: map_get($theme-colors, "blue");
+          height: 2rem;
+          color: map_get($web-colors, "black");
+          font-size: 1.2rem;
+          padding: 0.2rem 1rem 0.1rem 1rem;
+          font-family: "PT Sans Bold";
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

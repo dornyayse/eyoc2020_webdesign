@@ -1,15 +1,21 @@
-.page{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
-  height: fit-content;
+@import "page/title";
+@import "page/paragraph";
 
-  .content{
+.body {
+  .page {
+    padding-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     position: relative;
-    width: 72%;
+    height: fit-content;
 
-    
+    .content {
+      position: relative;
+      width: 72%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
