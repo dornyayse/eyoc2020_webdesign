@@ -1,0 +1,70 @@
+.body {
+  .page {
+    .content {
+      .paragraph {
+        .maps{
+          display: flex;
+          justify-content: space-between;
+          margin-top: -0.8rem;
+
+          .logo{
+            width: 10%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            .circle{
+              width: 3rem;
+              height: 3rem;
+              border-radius: 3rem;
+            }
+
+            .first{
+              z-index: 110;
+            }
+            .second{
+              z-index: 109;
+            }
+            .third{
+              z-index: 108;
+            }
+          }
+          .other{
+            width: 90%;
+            margin-left: 5%;
+            text-align: left;
+            font-family: "PT Sans";
+
+            table.map-detail{
+              width: 100%;
+              padding-top: 0.5rem;
+
+              td:first-child{
+                width: 12%;
+                font-family: "PT Sans Bold";
+              }
+
+              td:nth-child(2){
+                width: 88%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+        .text-maps{
+          margin-left: 15%;
+          margin-top: 1rem;
+        }
+        .google-maps{
+          width: 130%;
+          margin-left: -15%;
+          height: 30rem;
+        }
+      }
+    }
+  }
+}

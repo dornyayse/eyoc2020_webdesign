@@ -1,0 +1,52 @@
+.body {
+  .page {
+    .content {
+      .paragraph {
+        .terrain{
+          display: flex;
+          justify-content: space-between;
+
+          .logo{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            .circle{
+              width: 3rem;
+              height: 3rem;
+              border-radius: 3rem;
+            }
+            .name{
+              width: 100%;
+              text-transform: uppercase;
+              font-family: "PT Sans Bold";
+              text-align: center;
+            }
+          }
+          .other{
+            width: 85%;
+            margin-left: 5%;
+            text-align: justify;
+            font-family: "PT Sans";
+
+            table.preliminary{
+              text-align: center;
+              width: 100%;
+              border-spacing: 0;
+              th{
+                width: auto;
+                font-family: "PT Sans Bold";
+                background-color: map_get($theme-colors, "blue");
+              }
+            }
+            table, th, td {
+              border: 1px solid #828282;
+            }
+          }
+        }
+      }
+    }
+  }
+}

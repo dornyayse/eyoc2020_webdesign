@@ -1,5 +1,6 @@
 $theme-colors: (
-        "blue": #94d5da,
+        "blue": #94d6da,
+        "light-blue": #c9eaec,
         "light-gray": #506a6a,
         "dark-gray": #2e494d,
         "red": #ed1c24,
@@ -10,7 +11,10 @@ $theme-colors: (
 
 $web-colors: (
         "white": #ffffff,
-        "black": #000000
+        "black": #000000,
+        "g-yellow": #f9a825,
+        "g-red": #a52714,
+        "g-green": #7cb342
 );
 
 @each $name, $color in $theme-colors{
@@ -22,3 +26,11 @@ $web-colors: (
   }
 }
 
+@each $name, $color in $web-colors{
+  .background-#{$name} {
+    background: $color;
+  }
+  .color-#{$name} {
+    background: $color;
+  }
+}

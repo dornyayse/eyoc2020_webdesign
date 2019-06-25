@@ -10,7 +10,8 @@
         height: 3.5rem;
 
         .title-text{
-          width: 28%;
+          min-width: 28%;
+          width: fit-content;
           background-color: map_get($theme-colors, "blue");
           height: 2rem;
           color: map_get($web-colors, "black");
