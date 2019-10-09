@@ -31,107 +31,107 @@
   src: url("font/pt-sans/PTS76F.ttf");
 }
 .background-blue {
-  background: #94d6da;
+  background: #94d6da !important;
 }
 
 .color-blue {
-  background: #94d6da;
+  background: #94d6da !important;
 }
 
 .background-light-blue {
-  background: #c9eaec;
+  background: #c9eaec !important;
 }
 
 .color-light-blue {
-  background: #c9eaec;
+  background: #c9eaec !important;
 }
 
 .background-light-gray {
-  background: #506a6a;
+  background: #506a6a !important;
 }
 
 .color-light-gray {
-  background: #506a6a;
+  background: #506a6a !important;
 }
 
 .background-dark-gray {
-  background: #2e494d;
+  background: #2e494d !important;
 }
 
 .color-dark-gray {
-  background: #2e494d;
+  background: #2e494d !important;
 }
 
 .background-red {
-  background: #ed1c24;
+  background: #ed1c24 !important;
 }
 
 .color-red {
-  background: #ed1c24;
+  background: #ed1c24 !important;
 }
 
 .background-dark-green {
-  background: #3d803f;
+  background: #3d803f !important;
 }
 
 .color-dark-green {
-  background: #3d803f;
+  background: #3d803f !important;
 }
 
 .background-green {
-  background: #6aa644;
+  background: #6aa644 !important;
 }
 
 .color-green {
-  background: #6aa644;
+  background: #6aa644 !important;
 }
 
 .background-light-green {
-  background: #a4ce4c;
+  background: #a4ce4c !important;
 }
 
 .color-light-green {
-  background: #a4ce4c;
+  background: #a4ce4c !important;
 }
 
 .background-white {
-  background: #ffffff;
+  background: #ffffff !important;
 }
 
 .color-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .background-black {
-  background: #000000;
+  background: #000000 !important;
 }
 
 .color-black {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .background-g-yellow {
-  background: #f9a825;
+  background: #f9a825 !important;
 }
 
 .color-g-yellow {
-  color: #f9a825;
+  color: #f9a825 !important;
 }
 
 .background-g-red {
-  background: #a52714;
+  background: #a52714 !important;
 }
 
 .color-g-red {
-  color: #a52714;
+  color: #a52714 !important;
 }
 
 .background-g-green {
-  background: #7cb342;
+  background: #7cb342 !important;
 }
 
 .color-g-green {
-  color: #7cb342;
+  color: #7cb342 !important;
 }
 
 .body .top {

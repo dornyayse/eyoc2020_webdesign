@@ -19,18 +19,18 @@ $web-colors: (
 
 @each $name, $color in $theme-colors{
   .background-#{$name} {
-    background: $color;
+    background: $color !important;
   }
   .color-#{$name} {
-    background: $color;
+    background: $color !important;
   }
 }
 
 @each $name, $color in $web-colors{
   .background-#{$name} {
-    background: $color;
+    background: $color !important;
   }
   .color-#{$name} {
-    color: $color;
+    color: $color !important;
   }
 }
