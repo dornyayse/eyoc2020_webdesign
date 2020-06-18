@@ -462,6 +462,11 @@
   margin-bottom: 20vh;
 }
 
+a.link {
+  line-height: 1.5em;
+  margin-right: 0.2em;
+}
+
 * {
   box-sizing: border-box;
 }
