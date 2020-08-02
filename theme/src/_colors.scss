@@ -22,7 +22,7 @@ $web-colors: (
     background: $color !important;
   }
   .color-#{$name} {
-    background: $color !important;
+    color: $color !important;
   }
 }
 

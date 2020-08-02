@@ -8,7 +8,7 @@
           margin-top: -0.8rem;
 
           .logo{
-            width: 10%;
+            width: 5%;
             display: flex;
             position: relative;
             flex-direction: column;
@@ -32,7 +32,7 @@
             }
           }
           .other{
-            width: 90%;
+            width: 95%;
             margin-left: 5%;
             text-align: left;
             font-family: "PT Sans";
@@ -42,15 +42,12 @@
               padding-top: 0.5rem;
 
               td:first-child{
-                width: 12%;
+                width: 10%;
                 font-family: "PT Sans Bold";
               }
 
               td:nth-child(2){
-                width: 88%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                width: 90%;
               }
             }
           }

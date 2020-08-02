@@ -22,6 +22,10 @@
           color: map_get($web-colors, "black");
           height: fit-content;
           text-align: justify;
+
+          &.center {
+            text-align: center;
+          }
         }
         .separator{
           height: 2rem;
@@ -70,13 +74,13 @@
             background-color: map_get($theme-colors, "blue");
           }
           div:nth-child(2){
-            width: 17%;
+            width: 20%;
             padding: 0.2rem;
             font-family: "PT Sans Bold";
             background-color: map_get($theme-colors, "light-blue");
           }
           div:nth-child(3){
-            width: 63%;
+            width: 60%;
             padding: 0.2rem;
           }
         }
